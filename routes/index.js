@@ -10,6 +10,11 @@ router.use("/api/v1/admin/attendence", authenticate, adminAttendence);
 router.use("/api/v1/student/attendance", authenticate, studentAttendanceRoutes);
 router.get("/get", (_req, res) => {
   res.json({
+    message: "application good running",
+  });
+});
+router.get("/", (_req, res) => {
+  res.json({
     message: "server success running",
   });
 });
