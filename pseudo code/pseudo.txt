@@ -1,0 +1,40 @@
+// user registration
+Start
+name = input()
+email = input()
+password = input()
+if name && email && password is invalid:
+  return 400 error
+
+user = find user with email
+if user not found:
+  return 400 error
+
+hash = hash password
+user = save name, email, hash to user model
+return 201
+End
+// login user 
+start
+email = input()
+password = input()
+user =  email find with user
+if user not found
+retrun 400 error
+if password is not equal hashpassword
+return 400 error
+token authenticate
+retun token
+retrun 201 
+
+//reset password
+Start
+new-password = Input()
+old-password = Input()
+TODO:
+if old-not equal to user.hash password:
+   return 400 error
+else hashNewPassword = hash new-password
+   save hashNewPassword
+   return 201
+End

@@ -1,0 +1,5 @@
+Get Users /users
+Get User by ID /users/userId
+Create User /users
+Update User /users/userId
+Delete User /users/userId
