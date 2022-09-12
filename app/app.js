@@ -4,6 +4,7 @@ const { notFounHandler, errorHandler } = require("./error");
 const middlware = require("./globalmiddleware");
 const router = require("../routes/index");
 const app = express();
+
 // middleware
 app.use(middlware);
 // routes
